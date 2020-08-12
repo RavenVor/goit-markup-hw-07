@@ -2,23 +2,22 @@
 
 .footer {
   background-color: #2f303a;
-}
 
-.footer > .container {
-  display: flex;
-  align-items: baseline;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  & > .container {
+    display: flex;
+    align-items: baseline;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
 }
 
 .address-wrapper {
   margin-right: 69px;
-}
-
-.footer .logo {
-  margin-right: 0;
-  margin-bottom: 20px;
-  color: #ffffff;
 }
 
 .footer-address-list-item:not(:last-child) {
@@ -27,10 +26,12 @@
 
 .footer-address-link,
 .footer-contacts-link {
-  color: var(--dark-theme-text-color);
-
   font-weight: 400;
   line-height: 1.71;
+}
+
+.footer-address-link {
+  color: var(--dark-theme-text-color);
 }
 
 .footer-contacts-link {
