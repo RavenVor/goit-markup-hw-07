@@ -29,7 +29,7 @@
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  background-color: var(--primary-bg-color);
+  background-color: $primary-bg-color;
 }
 
 .modal-form-close-button {
@@ -57,7 +57,7 @@
 
   .modal-form-close-button:hover &,
   .modal-form-close-button:focus & {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
 }
 
@@ -68,7 +68,7 @@
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-  color: var(--title-text-color);
+  color: $title-text-color;
 }
 
 .modal-form-field {
@@ -90,7 +90,7 @@
 
   &:focus:placeholder-shown,
   &:focus:not(:placeholder-shown) {
-    border: 1px solid var(--accent-color);
+    border: 1px solid $accent-color;
   }
 }
 
@@ -103,17 +103,20 @@
 
   transition: transform 250ms linear, color 250ms linear;
 
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 
   .modal-form-input:focus + & {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 
   .modal-form-input:focus + &,
   .modal-form-input:not(:placeholder-shown) + & {
     transform: translate(-26px, -40px);
 
-    @extend %modal-form-focus-text;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
   }
 }
 
@@ -131,7 +134,7 @@
   fill: #212121;
 
   .modal-form-input:focus ~ & {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
 }
 
@@ -153,7 +156,7 @@
   border-radius: 4px;
   resize: none;
   &:focus {
-    border-color: var(--accent-color);
+    border-color: $accent-color;
   }
 }
 
@@ -168,11 +171,14 @@
   .modal-form-message:not(:placeholder-shown) + & {
     transform: translateY(-32px);
 
-    @extend %modal-form-focus-text;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
   }
 
   .modal-form-message:focus + & {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 
@@ -208,11 +214,11 @@
   transition: background-color 250ms linear, border 250ms linear;
 
   .modal-form-checkbox:checked + & {
-    border: 2px solid var(--accent-color);
+    border: 2px solid $accent-color;
     background-image: url(../img/icon-check.svg);
     background-size: contain;
     background-origin: border-box;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
   }
 }
 
@@ -220,10 +226,10 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 
   & a {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 
@@ -236,7 +242,7 @@
 
   :hover,
   :focus {
-    background-color: #188ce8;
+    background-color: $secondary-accent-color;
   }
 }
 

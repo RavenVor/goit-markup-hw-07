@@ -31,7 +31,7 @@
 
 .teammate-name,
 .teammate-profession {
-  color: var(--title-text-color);
+  color: $title-text-color;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -45,46 +45,23 @@
 .teammate-profession {
   margin-bottom: 16px;
 
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   font-weight: 400;
 }
 
-.social-links-list {
-  display: flex;
-
+.teammate-social-wrapper {
   padding-right: 32px;
   padding-bottom: 24px;
   padding-left: 32px;
-}
-
-.social-links-list-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
-  }
 }
 
 .social-link-svg {
   fill: #afb1b8;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.social-link:hover .social-link-svg,
-.social-link:focus .social-link-svg {
-  fill: #ffffff;
+  .social-link:hover &,
+  .social-link:focus & {
+    fill: #ffffff;
+  }
 }

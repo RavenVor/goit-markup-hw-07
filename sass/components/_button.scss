@@ -6,7 +6,7 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: var(--dark-theme-text-color);
-  background-color: var(--studio-button-bg-color);
+  color: $dark-theme-text-color;
+  background-color: $studio-button-bg-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
