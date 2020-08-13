@@ -228,7 +228,7 @@
   line-height: 1.71;
   color: $primary-text-color;
 
-  & a {
+  a {
     color: $accent-color;
   }
 }
@@ -240,8 +240,8 @@
 
   transition: background-color 250ms linear;
 
-  :hover,
-  :focus {
+  &:hover,
+  &:focus {
     background-color: $secondary-accent-color;
   }
 }

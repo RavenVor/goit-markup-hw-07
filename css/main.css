@@ -677,8 +677,7 @@ body {
   transition: background-color 250ms linear;
 }
 
-.submit-button :hover,
-.submit-button :focus {
+.submit-button:hover, .submit-button:focus {
   background-color: #188ce8;
 }
 
