@@ -24,7 +24,7 @@ body {
 
 .link {
   text-decoration: none;
-  display: block;
+  // display: block;
 }
 
 .list {
@@ -44,6 +44,8 @@ body {
 
 .img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 :focus {
